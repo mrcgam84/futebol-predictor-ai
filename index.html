@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10151d">
+  <meta name="description" content="Radar diário e análise estatística de jogos de futebol.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Futebol Predictor AI</title>
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><div class="ball">⚽</div><div><h1>Futebol Predictor AI</h1><p>Radar diário de futebol</p></div></div>
+    <span class="live">MODO DEMO</span>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">O TEU CENTRO DE ANÁLISE</p>
+      <h2>Todos os jogos.<br><em>Uma análise mais inteligente.</em></h2>
+      <p class="muted">Probabilidades estatísticas para apoiar a tua leitura dos jogos — nunca garantias de resultados.</p>
+    </section>
+    <section class="stats">
+      <article><span>Jogos no radar</span><strong id="matchCount">0</strong></article>
+      <article><span>Competições</span><strong>8</strong></article>
+      <article><span>Mercados</span><strong>10+</strong></article>
+    </section>
+    <section class="section-head">
+      <div><p class="eyebrow">RADAR</p><h2>Jogos de hoje</h2></div>
+      <button id="refresh" class="outline">Atualizar</button>
+    </section>
+    <div class="notice"><strong>Dados de demonstração.</strong> Ainda não existe ligação a um fornecedor de resultados em direto. As equipas, horários e probabilidades abaixo são exemplos e não previsões reais.</div>
+    <div class="filters">
+      <label for="league">Competição</label>
+      <select id="league">
+        <option value="Todas">Todas as competições</option>
+        <option>Portugal</option><option>Inglaterra</option><option>Espanha</option>
+        <option>Itália</option><option>Alemanha</option><option>França</option>
+        <option>Liga dos Campeões</option><option>Liga Europa</option>
+      </select>
+    </div>
+    <div id="matches" class="matches"></div>
+    <section class="section-head lower"><div><p class="eyebrow">ANÁLISE</p><h2>Mercados disponíveis</h2></div></section>
+    <div class="market-grid">
+      <span>1X2</span><span>Resultado exato</span><span>Mais/Menos golos</span>
+      <span>Ambas marcam</span><span>Cantos</span><span>Cartões</span>
+      <span>Remates</span><span>Golos por equipa</span><span>1.ª parte</span>
+      <span>Forma recente</span><span>Confrontos diretos</span><span>Probabilidades</span>
+    </div>
+    <section class="section-head lower"><div><p class="eyebrow">PERSONALIZAÇÃO</p><h2>As tuas competições</h2></div></section>
+    <p class="muted">A seleção de competições e a ligação aos dados reais serão ativadas na próxima fase. Poderás acrescentar outras ligas mais tarde.</p>
+  </main>
+  <footer>Futebol Predictor AI · Análise informativa · Joga com responsabilidade</footer>
+  <script src="app.js"></script>
+</body>
+</html>
